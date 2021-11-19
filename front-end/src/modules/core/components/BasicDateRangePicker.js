@@ -43,7 +43,7 @@ export default function BasicDateRangePicker({ childToParent }) {
                         <>
                             <TextField {...startProps} helperText={errorFrom} required />
                             <Box sx={{ mx: 1 }}> </Box>
-                            <TextField {...endProps} required />
+                            <TextField {...endProps} helperText={errorTo} required />
                         </>
                     )}
                 />
