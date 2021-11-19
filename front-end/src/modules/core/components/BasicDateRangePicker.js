@@ -29,7 +29,7 @@ export default function BasicDateRangePicker({ childToParent }) {
                             setErrorFrom('error: earlier input date ');
                         }
                         if (moment(newValue[1]).format('X') >= moment().unix()) {
-                            errorTo('error: before today ');
+                            setErrorTo('error: before today ');
                         }
                         if (newValue[0] != null && moment(newValue[0]).format('X') >= moment(newValue[1]).format('X')) {
                             console.log('check');
